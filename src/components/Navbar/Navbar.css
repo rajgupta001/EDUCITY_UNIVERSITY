@@ -1,0 +1,87 @@
+nav{
+    width: 100%;
+
+    color: #a98575;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo{
+    width: 120px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.dark-nav{
+    background-color: #a98575;
+    transition: 0.5s;
+}
+
+.white-text{
+    color: white;
+}
+
+/* for hiding the menu icon on bigger screen */
+.menu-icon{
+    display: none;
+}
+
+/* media query */
+
+@media(max-width:1000px){
+    .logo{
+        width: 140px;
+
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+@media(max-width:840px){
+    nav{
+        padding: 15px 0;
+
+
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        background: #b49b90;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        color: white;
+    }
+    nav ul li{
+        display: block; 
+       margin: 25px;
+    }
+    
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        
+    }
+    #hide-mobile-menu{
+      right: -200px;
+    }
+}
